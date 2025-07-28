@@ -234,8 +234,8 @@ docs/build/
 deployment/
 deploy/
 
-# Analytics and monitoring
-analytics/
+# External analytics and monitoring (keep lib/analytics)
+/analytics/
 monitoring/
 
 # Cache directories
