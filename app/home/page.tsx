@@ -88,7 +88,7 @@ export default async function HomePage() {
             <div className="mb-2" style={{ color: '#0BC5EA', fontWeight: '600' }}>
               ritualll
             </div>
-            Your Personalized Intelligence Briefing • Updated Daily at 5:30 PM Local Time
+            Your Personalized Intelligence Briefing • Updated Daily at 12:00 UTC
           </div>
         </footer>
       </div>

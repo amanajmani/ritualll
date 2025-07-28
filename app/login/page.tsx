@@ -107,7 +107,7 @@ export default function LoginPage() {
             ritualll
           </h1>
           <p className="text-gray-600 mb-8">
-            Your daily YouTube digest, delivered at 5:30 PM
+            Your daily YouTube digest, delivered daily
           </p>
         </div>
 

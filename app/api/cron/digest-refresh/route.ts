@@ -42,12 +42,9 @@ export async function POST(request: NextRequest) {
         
         console.log(`⏰ Checking user ${user.email} (${userTime})...`)
 
-        // Check if it's 5:30 PM in user's timezone
-        if (!isDigestTime(userTimezone)) {
-          console.log(`⏭️  Skipping ${user.email} - not digest time (current: ${userTime})`)
-          results.skippedUsers++
-          continue
-        }
+        // Vercel Hobby Plan Limitation: Single daily cron at 12:00 UTC
+        // This time works well for: India (5:30 PM), Europe (1-2 PM), some of Asia
+        // US users will get digest in morning, which is still reasonable for daily digest
 
         // Check if user should receive digest today
         if (!shouldProcessUser(user.last_briefing_date, userTimezone)) {
